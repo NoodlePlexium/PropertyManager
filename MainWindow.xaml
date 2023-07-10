@@ -1,0 +1,48 @@
+﻿<Window x:Class="PropertyManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PropertyManager"
+        mc:Ignorable="d"
+        Title="PropertyManager" 
+		Height="450"
+		Width="800"
+		WindowStartupLocation="CenterScreen"
+		Background="#24313b"
+		Icon="/Icon.ico">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="25"></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+
+		<Grid Background="#0F0F2D" Grid.ColumnSpan="2" MouseDown="Grid_MouseDown">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+		</Grid>
+
+			<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="200"></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+
+			<StackPanel>
+				<Button Content="Deal Analysis" HorizontalContentAlignment="Right"></Button>
+				<Button Content="Portfolio" HorizontalContentAlignment="Right"></Button>
+				<Button Content="Goals" HorizontalContentAlignment="Right"></Button>
+				<Button Content="Account" HorizontalContentAlignment="Right"></Button>
+			</StackPanel>
+		</Grid>
+	</Grid>
+</Window>
